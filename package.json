@@ -20,7 +20,8 @@
   "homepage": "https://github.com/hn-son/nodejs-learning#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^5.1.0"
+    "express-handlebars": "^5.1.0",
+    "mongoose": "^7.4.1"
   },
   "devDependencies": {
     "node-sass": "^9.0.0",

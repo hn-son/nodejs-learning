@@ -1,8 +1,11 @@
 const express = require("express");
 const handlebars = require("express-handlebars");
-const route = require("./routes/index")
+const route = require("./routes/index");
+const db = require("./config/db");
 const path = require("path");
 const app = express();
+
+db.connect();
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -13,7 +16,7 @@ app.engine(
   })
 );
 app.set("view engine", "hbs");
-app.set("views", path.join(__dirname, "resources/views"));
+app.set("views", path.join(__dirname, "resources", "views"));
 
 // routes
 route(app);

@@ -1,1 +1,16 @@
-<h1>home</h1>
+<div class="mt-4">
+  <div class="row">
+    {{#each courses}}
+      <div class="col-sm-6 col-lg-4 mt-3">
+        <div class="card">
+          <img class="card-img-top" src="{{this.img}}" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">{{this.desc}}</p>
+            <a href="#" class="btn btn-primary">Xem</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
